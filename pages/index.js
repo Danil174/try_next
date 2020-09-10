@@ -1,13 +1,9 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import {MainLayout} from "../components/MainLayout";
 
 export default function Index() {
-  return <>
-    <Head>
-      <title>Next app</title>
-      <meta name="keywords" content="next, js, react" />
-      <meta name="description" content="my first next app" />
-    </Head>
+  return (
+  <MainLayout title={'Home page'}>
     <h1>Hellow Next.js</h1>
     <p>
       <Link href={'/about'}><a>About</a></Link>
@@ -15,5 +11,6 @@ export default function Index() {
     <p>
       <Link href={'/posts'}><a >Posts</a></Link>
     </p>
-  </>
+  </MainLayout>
+  );
 }

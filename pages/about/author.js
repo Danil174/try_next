@@ -1,3 +1,3 @@
 export default function Author() {
-  return  <h1>Author page</h1>
+  return  <h2>Author page</h2>
 }
